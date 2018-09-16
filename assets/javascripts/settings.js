@@ -8,11 +8,11 @@
     Settings.prototype = {
 
         init: function() {
-            this.fontSize = 16;
+            this.fontSize = 14;
         },
 
         fontHeight: function() {
-            return this._config.fontSize;
+            return this.fontSize;
         },
 
         // Having a width that is 3/5 of the height is standard for monospace text

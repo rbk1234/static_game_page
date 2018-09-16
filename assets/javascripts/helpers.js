@@ -33,7 +33,7 @@
 
     // --------- Some misc helpers
 
-    Game.addNamespace("Util");
+    Game.namespace("Util");
 
     Game.Util.getMemoryUsage = function() {
         if (performance && performance.memory) {

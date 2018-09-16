@@ -22,27 +22,30 @@
 
 </head>
 
-<body>
+<body class="nightmode">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <div class="grid-container fluid">
     <div class="grid-x grid-padding-x">
-      <div class="large-12 cell">
-        <h1>Cool Header</h1>
+      <div class="large-10 cell">
+        <h3>Game Title</h3>
+        <div class="canvas-container">
+          <canvas id="main-canvas">Your browser does not support HTML5 Canvas.</canvas>
+        </div>
+        <div id="canvas-1"></div>
+      </div>
+      <div class="large-2 cell">
+        <div>
+          FPS: <span id="fps"></span><br>
+          Time: <span id="total-time"></span><br>
+          Memory: <span id="memory"></span>
+        </div>
+        <hr>
+        <div id="log"></div>
       </div>
     </div>
-  </div>
-
-  <div class="grid-container fluid">
-    FPS: <span id="fps"></span><br>
-    Time: <span id="total-time"></span><br>
-    Memory: <span id="memory"></span>
-  </div>
-
-  <div>
-    <div id="log"></div>
   </div>
 
   <!-- Plugins -->
@@ -56,6 +59,7 @@
   <script src="assets/javascripts/namespace.js"></script>
 
   <!-- Rest of the javascript files here -->
+  <script src="assets/javascripts/canvas.js"></script>
   <script src="assets/javascripts/clock.js"></script>
   <script src="assets/javascripts/constants.js"></script>
   <script src="assets/javascripts/helpers.js"></script>

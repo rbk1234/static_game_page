@@ -1,7 +1,7 @@
 /* The only global variable. Cannot conflict with any variables from plugins.  */
 
 var Game = { // jshint ignore:line
-    addNamespace: function (namespace) {
+    namespace: function (namespace) {
         'use strict';
         var parts   = namespace.split("."),
             object  = this,

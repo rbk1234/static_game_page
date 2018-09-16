@@ -2,3 +2,57 @@
 .log-paragraph {
     margin-bottom: 0;
 }
+
+
+canvas#main-canvas {
+    background: #D4A190;
+    z-index: 2;
+    outline: 2px solid #3f3f3f;
+}
+
+.canvas-container {
+    z-index: 2; // Keep above log-container so don't catch scroll events
+    position: absolute;
+}
+
+.log-container {
+    overflow-y: scroll;
+}
+
+#base-log {
+    height: 200px;
+}
+
+body.nightmode {
+    background: #3f3f3f;
+    color: #d7d7d7;
+}
+body.nightmode .glow {
+    -webkit-animation: white-glow 0.5s 2 alternate;
+}
+body.nightmode h1, h2, h3, h4, h5, h6, a, a:link {
+    color: #d7d7d7;
+}
+body.nightmode a:hover {
+    color: #289beb;
+}
+body .tabs dd > a {
+    color: #d7d7d7;
+}
+body.nightmode .tabs .tab-title > a {
+    color: #d7d7d7;
+}
+body .tabs dd > a:hover {
+    color: #289beb;
+}
+body.nightmode .tabs .tab-title > a:hover {
+    color: #289beb;
+}
+body .tabs dd.active > a {
+    color: #289beb;
+    border-bottom: 0.250em solid #289beb;
+}
+body.nightmode .tabs .tab-title.active > a {
+    color: #289beb;
+    border-bottom: 0.250em solid #289beb;
+}

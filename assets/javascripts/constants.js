@@ -8,6 +8,7 @@
     Constants.prototype = {
 
         init: function() {
+            // Discreet vs. continuous drawing (discreet = snap to grid, continuous = smooth)
             this.continuousDrawing = true;
 
             // Note: needs to be higher than the max attack speed for game to function correctly

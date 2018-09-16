@@ -50,7 +50,7 @@
             //    }, 1000); // TODO Has to match glow animation
             //}
 
-            this._$container.prepend($p);
+            this._$container.append($p);
 
             //if (this._dynamicScrolling) {
             //    var container = this._$container.get(0);

@@ -25,7 +25,43 @@
         1000
     );
 
-    Game.Log.logMessage('Initializing...');
+    Game.Log.logMessage('Initializing 1...');
+    Game.Log.logMessage('Initializing 2...');
+    Game.Log.logMessage('Initializing 3...');
+
+    var exampleCanvas = new Game.Display.Canvas(
+        $('#main-canvas')
+    );
+    $('.canvas-container').width(exampleCanvas.width());
+
+    var image = [
+        '                                                                                   (90x25)',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                     [>                                                   ',
+        '  XXXXXXXXXXXX                      /==;>                                                 ',
+        '         X    XXXXXXXXXXXXX          /\\                                                   ',
+        '         X                 XXXXXXXXXXXX                                                   ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                                                                                          ',
+        '                         XXXXXX                                                           ',
+        'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    ];
+    exampleCanvas.drawImage(image);
 
     Game.Clock.run();
 
