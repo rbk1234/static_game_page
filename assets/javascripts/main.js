@@ -20,7 +20,7 @@
 
             $('#fps').text(fps);
             $('#total-time').text(total);
-            $('#memory').text(Game.Util.roundToDecimal(Game.Util.getMemoryUsage(), 2));
+            $('#memory').text(Game.Util.roundToDecimal(Game.Util.getMemoryUsage(), 1) + 'MB');
         },
         1000
     );
